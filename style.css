@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg1);
+}
+:root{
+    --bg:#23c4cc;
+    --color:#fff;
+    --bg1:#101729;
+    --pink:#d6496a;
+}
+
+label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 160px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+  }
+  
+  label::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 1px;
+    top: 0.5px;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    background: black;
+    transition: 0.4s;
+  }
+ 
+  
+  label.active::before {
+    left: 24px;
+    background-color: #ffffff;
+  }
+  
+  body.night {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  nav.night{
+    background-color: #fff !important;
+  }
+  /* the banner section */
+  .content{
+   text-align: center;
+    margin: 0 auto;
+    margin-top: 30vh;
+  }
+  .content h1{
+    color:var(--color);
+    font-size: 3.5em;
+    font-family: sans-serif;
+  }
+  .content span{
+    color:var(--bg);
+  }
+  .btn button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius:5px;
+    background: var(--bg);
+  }
+  .content p{
+    color: var(--color);
+  }
+  @media(max-width:820px) and (min-width:100px){
+    label{
+        top: 20px;
+    }
+  }
