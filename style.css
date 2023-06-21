@@ -76,6 +76,7 @@ label {
   }
   .content p{
     color: var(--color);
+    font-size: 1.5rem;
   }
   @media(max-width:820px) and (min-width:100px){
     label{
